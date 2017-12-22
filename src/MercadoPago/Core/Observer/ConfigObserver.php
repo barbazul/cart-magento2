@@ -142,7 +142,7 @@ class ConfigObserver
     /**
      * Disables custom checkout if selected country is not available
      */
-    private function availableCheckout()
+    public function availableCheckout()
     {
         $country = $this->_scopeConfig->getValue(
             \MercadoPago\Core\Helper\Data::XML_PATH_COUNTRY,
@@ -164,7 +164,7 @@ class ConfigObserver
      *
      * @param $typeCheckout
      */
-    private function checkBanner($typeCheckout)
+    public function checkBanner($typeCheckout)
     {
         //get country
         $country = $this->_scopeConfig->getValue(
@@ -205,7 +205,7 @@ class ConfigObserver
      *
      * @throws \Magento\Framework\Exception\LocalizedException
      */
-    private function setSponsor()
+    public function setSponsor()
     {
         $sponsorIdConfig = $this->_scopeConfig->getValue(
             \MercadoPago\Core\Helper\Data::XML_PATH_SPONSOR_ID,

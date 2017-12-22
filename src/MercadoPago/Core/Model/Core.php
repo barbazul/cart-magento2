@@ -264,7 +264,7 @@ class Core
 
         foreach ($fields as $field) {
             if ($payment->getAdditionalInformation($field['field']) != "") {
-                $text = $field['title'];
+                $text = __($field['title'], $payment->getAdditionalInformation($field['field']));
                 $info_payments[$field['field']] = array(
                     "text"  => $text,
                     "value" => $payment->getAdditionalInformation($field['field'])

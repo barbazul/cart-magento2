@@ -485,7 +485,9 @@ class Data
     {
         $magentoPackages = $this->_composerInformation->getInstalledMagentoPackages();
 
-        return $magentoPackages['mercadopago/magento2-plugin']['version'];
+        //return $magentoPackages['mercadopago/magento2-plugin']['version'];
+		//return $magentoPackages['mercadopago/module-core']['version'];
+		return "1.5.3";
     }
 
     /**
